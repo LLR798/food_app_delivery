@@ -17,8 +17,8 @@ class CartPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CustomAppBar(),
-                  Padding(
+                  const CustomAppBar(),
+                  const Padding(
                     padding: EdgeInsets.only(
                       top: 20,
                       left: 10,
@@ -60,12 +60,12 @@ class CartPage extends StatelessWidget {
                               width: 140,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             width: 190,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
+                              children: const [
                                 Text(
                                   'Mango Loco',
                                   style: TextStyle(
@@ -90,17 +90,17 @@ class CartPage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(vertical: 8),
+                            padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Container(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
-                                color: Color(0xFF0808DD),
+                                color: const Color(0xFF0808DD),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.add,
                                     color: Color(0xFFF3F3F3),
@@ -153,12 +153,12 @@ class CartPage extends StatelessWidget {
                               width: 140,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             width: 190,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
+                              children: const [
                                 Text(
                                   'Petit Gateau',
                                   style: TextStyle(
@@ -183,17 +183,17 @@ class CartPage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(vertical: 8),
+                            padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Container(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
-                                color: Color(0xFF0808DD),
+                                color: const Color(0xFF0808DD),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.add,
                                     color: Color(0xFFF3F3F3),
@@ -246,12 +246,12 @@ class CartPage extends StatelessWidget {
                               width: 140,
                             ),
                           ),
-                          Container(
+                          SizedBox(
                             width: 190,
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
-                              children: [
+                              children: const [
                                 Text(
                                   'Monster Burguer',
                                   style: TextStyle(
@@ -276,17 +276,17 @@ class CartPage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(vertical: 8),
+                            padding: const EdgeInsets.symmetric(vertical: 8),
                             child: Container(
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
-                                color: Color(0xFF0808DD),
+                                color: const Color(0xFF0808DD),
                                 borderRadius: BorderRadius.circular(20),
                               ),
                               child: Column(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.add,
                                     color: Color(0xFFF3F3F3),
@@ -312,11 +312,11 @@ class CartPage extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+                    padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
                     child: Container(
-                      padding: EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: Color(0xFFEAEAEA),
+                        color: const Color(0xFFEAEAEA),
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
@@ -330,12 +330,12 @@ class CartPage extends StatelessWidget {
                       child: Column(
                         children: [
                           Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 10,
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   'Items: ',
                                   style: TextStyle(
@@ -351,16 +351,16 @@ class CartPage extends StatelessWidget {
                               ],
                             ),
                           ),
-                          Divider(
+                          const Divider(
                             color: Colors.black,
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 10,
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   'Sub-total: ',
                                   style: TextStyle(
@@ -377,12 +377,12 @@ class CartPage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 10,
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   'Entrega: ',
                                   style: TextStyle(
@@ -399,12 +399,12 @@ class CartPage extends StatelessWidget {
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsets.symmetric(
+                            padding: const EdgeInsets.symmetric(
                               vertical: 10,
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text(
                                   'Total: ',
                                   style: TextStyle(
@@ -431,8 +431,8 @@ class CartPage extends StatelessWidget {
           ),
         ],
       ),
-      drawer: CustomDrawer(),
-      bottomNavigationBar: CustomCartNavBar(),
+      drawer: const CustomDrawer(),
+      bottomNavigationBar: const CustomCartNavBar(),
     );
   }
 }

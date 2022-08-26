@@ -7,13 +7,13 @@ class CustomItemNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         height: 60,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
-              children: [
+              children: const [
                 Text(
                   'Total:',
                   style: TextStyle(
@@ -35,10 +35,10 @@ class CustomItemNavBar extends StatelessWidget {
               onPressed: () {},
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all<Color>(
-                  Color(0xFF0808DD),
+                  const Color(0xFF0808DD),
                 ),
                 padding: MaterialStateProperty.all(
-                  EdgeInsets.symmetric(
+                  const EdgeInsets.symmetric(
                     vertical: 10,
                     horizontal: 10,
                   ),
@@ -49,11 +49,11 @@ class CustomItemNavBar extends StatelessWidget {
                   ),
                 ),
               ),
-              icon: Icon(
+              icon: const Icon(
                 Icons.add_shopping_cart_outlined,
                 color: Color(0xFFF3F3F3),
               ),
-              label: Text(
+              label: const Text(
                 'Adicione ao carrinho',
                 style: TextStyle(
                   fontSize: 14,

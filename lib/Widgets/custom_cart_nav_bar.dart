@@ -7,13 +7,13 @@ class CustomCartNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         height: 60,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
-              children: [
+              children: const [
                 Text('Total:', 
                 style: TextStyle(
                   fontSize: 18,
@@ -31,10 +31,10 @@ class CustomCartNavBar extends StatelessWidget {
             ),
             ElevatedButton(onPressed: (){},
             style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all<Color>(Color(0xFF0808DD),
+              backgroundColor: MaterialStateProperty.all<Color>(const Color(0xFF0808DD),
               ),
               padding: MaterialStateProperty.all(
-                EdgeInsets.symmetric(
+                const EdgeInsets.symmetric(
                   vertical: 10,
                   horizontal: 10,
                 ),
@@ -45,7 +45,7 @@ class CustomCartNavBar extends StatelessWidget {
                 ),
               ),
             ),
-            child: Text('Finalizar compra',
+            child: const Text('Finalizar compra',
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.bold,

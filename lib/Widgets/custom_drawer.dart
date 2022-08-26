@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
@@ -38,7 +37,7 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(
               Icons.home_outlined,
               color: Color(0xFF0808DD),
@@ -51,7 +50,7 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(
               Icons.person_outlined,
               color: Color(0xFF0808DD),
@@ -64,7 +63,7 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(
               Icons.shopping_cart_outlined,
               color: Color(0xFF0808DD),
@@ -77,7 +76,7 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(
               Icons.favorite_outline,
               color: Color(0xFF0808DD),
@@ -90,7 +89,7 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(
               Icons.settings_outlined,
               color: Color(0xFF0808DD),
@@ -103,7 +102,7 @@ class CustomDrawer extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(
               Icons.exit_to_app_outlined,
               color: Color(0xFF0808DD),

@@ -12,12 +12,12 @@ class NewestItemPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(top: 5),
+        padding: const EdgeInsets.only(top: 5),
         child: ListView(
           children: [
-            CustomAppBar(),
+            const CustomAppBar(),
             Padding(
-              padding: EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               child: Image.asset(
                 'assets/images/acai.png',
                 height: 300,
@@ -29,13 +29,13 @@ class NewestItemPage extends StatelessWidget {
               height: 30,
               child: Container(
                 width: double.infinity,
-                color: Color(0xFFF3F3F3),
+                color: const Color(0xFFF3F3F3),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(top: 60, bottom: 10),
+                        padding: const EdgeInsets.only(top: 60, bottom: 10),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -52,7 +52,7 @@ class NewestItemPage extends StatelessWidget {
                                   color: Color(0xFF0808DD),),
                               onRatingUpdate: (index) {},
                             ),
-                            Text(
+                            const Text(
                               'R\$: 19',
                               style: TextStyle(
                                 fontSize: 20,
@@ -63,14 +63,14 @@ class NewestItemPage extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(
+                        padding: const EdgeInsets.only(
                           top: 10,
                           bottom: 20,
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               'Açaí do norte',
                               style: TextStyle(
                                 fontSize: 22,
@@ -79,14 +79,14 @@ class NewestItemPage extends StatelessWidget {
                             ),
                             Container(
                               width: 90,
-                              padding: EdgeInsets.all(5),
+                              padding: const EdgeInsets.all(5),
                               decoration: BoxDecoration(
-                                  color: Color(0xFF0808DD),
+                                  color: const Color(0xFF0808DD),
                                   borderRadius: BorderRadius.circular(20)),
                               child: Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceBetween,
-                                children: [
+                                children: const [
                                   Icon(
                                     Icons.remove,
                                     color: Color(0xFFF3F3F3),
@@ -111,7 +111,7 @@ class NewestItemPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.symmetric(
                           vertical: 10,
                         ),
@@ -124,20 +124,20 @@ class NewestItemPage extends StatelessWidget {
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                           vertical: 10,
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            Text(
+                            const Text(
                               'Tempo de espera: ',
                               style: TextStyle(
                                   fontSize: 16, fontWeight: FontWeight.bold),
                               textAlign: TextAlign.justify,
                             ),
                             Row(
-                              children: [
+                              children: const [
                                 Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 5),
                                   child: Icon(Icons.timer_outlined,
@@ -163,8 +163,8 @@ class NewestItemPage extends StatelessWidget {
           ],
         ),
       ),
-      drawer: CustomDrawer(),
-      bottomNavigationBar: CustomNewestItemNavBar(),
+      drawer: const CustomDrawer(),
+      bottomNavigationBar: const CustomNewestItemNavBar(),
     );
   }
 }

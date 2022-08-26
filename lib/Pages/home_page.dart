@@ -67,7 +67,7 @@ class HomePage extends StatelessWidget {
       ),
 
       // Custom Drawer Widget
-      drawer: CustomDrawer(),
+      drawer: const CustomDrawer(),
 
       floatingActionButton: Container(
         decoration: BoxDecoration(

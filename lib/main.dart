@@ -6,10 +6,12 @@ import 'package:food_delivery_app/Pages/newst_item_page.dart';
 
 
 void main() {
-  runApp(FoodApp());
+  runApp(const FoodApp());
 }
 
 class FoodApp extends StatelessWidget {
+  const FoodApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,10 +21,10 @@ class FoodApp extends StatelessWidget {
         scaffoldBackgroundColor: const Color(0xFFF3F3F3),
       ),
       routes: {
-        '/' : (context) => HomePage(),
-        'cartPage' : (context) => CartPage(),
-        'itemPage' : (context) => ItemPage(),
-        'newestItemPage' : (context) => NewestItemPage(),
+        '/' : (context) => const HomePage(),
+        'cartPage' : (context) => const CartPage(),
+        'itemPage' : (context) => const ItemPage(),
+        'newestItemPage' : (context) => const NewestItemPage(),
       },
     );
   }
