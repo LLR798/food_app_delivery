@@ -14,8 +14,8 @@ class CustomPopularItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 7),
               child: Container(
-                width: 170,
-                height: 225,
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.32,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
                   borderRadius: BorderRadius.circular(10),
@@ -33,9 +33,14 @@ class CustomPopularItems extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        child: Image.asset('assets/images/burger.png'),
+                      InkWell(
+                        onTap: () {
+                          Navigator.pushNamed(context, 'itemPage');
+                        },
+                        child: Container(
+                          alignment: Alignment.center,
+                          child: Image.asset('assets/images/burger.png'),
+                        ),
                       ),
                       const Text(
                         'Monster Burger',
@@ -77,8 +82,8 @@ class CustomPopularItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 7),
               child: Container(
-                width: 170,
-                height: 225,
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.32,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
                   borderRadius: BorderRadius.circular(10),
@@ -97,10 +102,10 @@ class CustomPopularItems extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        alignment: Alignment.center,
-                        child: Image.asset('assets/images/pizza.png'),
-                      ),
-                      const SizedBox(height: 20),
+                          alignment: Alignment.center,
+                          child: Image.asset('assets/images/pizza.png'),
+                        ),
+                      const SizedBox(height: 25),
                       const Text(
                         'Marguerita',
                         style: TextStyle(
@@ -141,8 +146,8 @@ class CustomPopularItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 7),
               child: Container(
-                width: 170,
-                height: 225,
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.32,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
                   borderRadius: BorderRadius.circular(10),
@@ -160,12 +165,14 @@ class CustomPopularItems extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        alignment: Alignment.center,
-                        child: Image.asset('assets/images/ala_minuta.png',
-                        width: 135,
+                       Container(
+                          alignment: Alignment.center,
+                          child: Image.asset(
+                            'assets/images/ala_minuta.png',
+                            width: 135,
+                          ),
                         ),
-                      ),
+                        const SizedBox(height: 34),
                       const Text(
                         'Ala de carne',
                         style: TextStyle(
@@ -206,8 +213,8 @@ class CustomPopularItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 7),
               child: Container(
-                width: 170,
-                height: 225,
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.32,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
                   borderRadius: BorderRadius.circular(10),
@@ -226,11 +233,13 @@ class CustomPopularItems extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        alignment: Alignment.center,
-                        child: Image.asset('assets/images/fricasse.png',
-                        width: 135,
+                          alignment: Alignment.center,
+                          child: Image.asset(
+                            'assets/images/fricasse.png',
+                            width: 135,
+                          ),
                         ),
-                      ),
+                        const SizedBox(height: 34),
                       const Text(
                         'Fricasse',
                         style: TextStyle(
@@ -271,8 +280,8 @@ class CustomPopularItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 7),
               child: Container(
-                width: 170,
-                height: 225,
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.32,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
                   borderRadius: BorderRadius.circular(10),
@@ -291,11 +300,13 @@ class CustomPopularItems extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        alignment: Alignment.center,
-                        child: Image.asset('assets/images/monster.png',
-                        height: 135,
+                          alignment: Alignment.center,
+                          child: Image.asset(
+                            'assets/images/monster.png',
+                            height: 135,
+                          ),
                         ),
-                      ),
+                        const SizedBox(height: 34),
                       const Text(
                         'Mango Loco',
                         style: TextStyle(
@@ -316,6 +327,73 @@ class CustomPopularItems extends StatelessWidget {
                         children: const [
                           Text(
                             'R\$: 12',
+                            style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Icon(
+                            Icons.favorite_border,
+                            color: Color(0XFFE00808),
+                            size: 24,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 7),
+              child: Container(
+                width: MediaQuery.of(context).size.width * 0.5,
+                height: MediaQuery.of(context).size.height * 0.32,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFEAEAEA),
+                  borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFF9A9A9A).withOpacity(0.5),
+                      spreadRadius: 2,
+                      blurRadius: 10,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                          alignment: Alignment.center,
+                          child: Image.asset(
+                            'assets/images/petit-gateau.png',
+                            height: 135,
+                          ),
+                        ),
+                        const SizedBox(height: 34),
+                      const Text(
+                        'Petit Gateau',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 4),
+                      const Text(
+                        'Prove o Petit Gateau',
+                        style: TextStyle(
+                          fontSize: 14,
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: const [
+                          Text(
+                            'R\$: 15',
                             style: TextStyle(
                               fontSize: 17,
                               fontWeight: FontWeight.bold,

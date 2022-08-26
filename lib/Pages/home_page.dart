@@ -82,11 +82,13 @@ class HomePage extends StatelessWidget {
           ],
         ),
         child: FloatingActionButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, 'cartPage');
+          },
           backgroundColor: const Color(0xFFEAEAEA),
           child: const Icon(
             Icons.shopping_cart_outlined,
-            color: Color(0xFFE00808),
+            color: Color(0xFF0808DD),
           ),
         ),
       ),

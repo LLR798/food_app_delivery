@@ -15,7 +15,7 @@ class CustomNewestItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
               child: Container(
-                width: MediaQuery.of(context).size.width * 1,
+                width: MediaQuery.of(context).size.width * 0.95,
                 height: 150,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
@@ -32,7 +32,9 @@ class CustomNewestItems extends StatelessWidget {
                 child: Row(
                   children: [
                     InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, 'newestItemPage');
+                      },
                       child: Container(
                         alignment: Alignment.centerLeft,
                         child: Image.asset(
@@ -69,7 +71,10 @@ class CustomNewestItems extends StatelessWidget {
                             itemSize: 18,
                             itemPadding:
                                 const EdgeInsets.symmetric(horizontal: 2),
-                            itemBuilder: (context, _) => const Icon(Icons.star),
+                            itemBuilder: (context, _) => const Icon(
+                              Icons.star,
+                              color: Color(0xFF0808DD),
+                            ),
                             onRatingUpdate: (index) {},
                           ),
                           const Text(
@@ -89,12 +94,12 @@ class CustomNewestItems extends StatelessWidget {
                         children: const [
                           Icon(
                             Icons.favorite_border,
-                            color: Color(0XFFE00808),
+                            color: Color(0xFFE00808),
                             size: 24,
                           ),
                           Icon(
                             Icons.add_shopping_cart,
-                            color: Color(0XFFE00808),
+                            color: Color(0xFF0808DD),
                             size: 24,
                           ),
                         ],
@@ -107,7 +112,7 @@ class CustomNewestItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: Container(
-                width: MediaQuery.of(context).size.width * 1,
+                width: MediaQuery.of(context).size.width * 0.95,
                 height: 150,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
@@ -161,7 +166,10 @@ class CustomNewestItems extends StatelessWidget {
                             itemSize: 18,
                             itemPadding:
                                 const EdgeInsets.symmetric(horizontal: 2),
-                            itemBuilder: (context, _) => const Icon(Icons.star),
+                            itemBuilder: (context, _) => const Icon(
+                              Icons.star,
+                              color: Color(0xFF0808DD),
+                            ),
                             onRatingUpdate: (index) {},
                           ),
                           const Text(
@@ -181,12 +189,12 @@ class CustomNewestItems extends StatelessWidget {
                         children: const [
                           Icon(
                             Icons.favorite_border,
-                            color: Color(0XFFE00808),
+                            color: Color(0xFFE00808),
                             size: 24,
                           ),
                           Icon(
                             Icons.add_shopping_cart,
-                            color: Color(0XFFE00808),
+                            color: Color(0xFF0808DD),
                             size: 24,
                           ),
                         ],
@@ -199,7 +207,7 @@ class CustomNewestItems extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
               child: Container(
-                width: MediaQuery.of(context).size.width * 1,
+                width: MediaQuery.of(context).size.width * 0.95,
                 height: 150,
                 decoration: BoxDecoration(
                   color: const Color(0xFFEAEAEA),
@@ -253,7 +261,10 @@ class CustomNewestItems extends StatelessWidget {
                             itemSize: 18,
                             itemPadding:
                                 const EdgeInsets.symmetric(horizontal: 2),
-                            itemBuilder: (context, _) => const Icon(Icons.star),
+                            itemBuilder: (context, _) => const Icon(
+                              Icons.star,
+                              color: Color(0xFF0808DD),
+                            ),
                             onRatingUpdate: (index) {},
                           ),
                           const Text(
@@ -273,12 +284,12 @@ class CustomNewestItems extends StatelessWidget {
                         children: const [
                           Icon(
                             Icons.favorite_border,
-                            color: Color(0XFFE00808),
+                            color: Color(0xFFE00808),
                             size: 24,
                           ),
                           Icon(
                             Icons.add_shopping_cart,
-                            color: Color(0XFFE00808),
+                            color: Color(0xFF0808DD),
                             size: 24,
                           ),
                         ],
